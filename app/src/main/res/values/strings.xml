@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI APP</string>
+    <string name="txt_introduction">Body Mass Index (BMI) App will help you to generate your body condition.</string>
+    <string name="txt_instruction">In order to know your Body Mass Index and your Condition whether you are underweight, normal weight, overweight and obese kindly input the required values..</string>
+    <string name="txt_weight">Input your Weight (kg)</string>
+    <string name="txt_height">Input your Height (m)</string>
+    <string name="txt_compute">Generate</string>
+    <string name="title_activity_result">GENERATED RESULT</string>
+    <string name="txt_result">Showing result...</string>
+    <string name="txt_compute_result">Showing Result(s)</string>
+    <string name="txt_close">Close</string>
+    <string name="btn_return">Generate Again</string>
+</resources>

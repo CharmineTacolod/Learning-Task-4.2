@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEBF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFBD80"
+        android:padding="10sp"
+        android:text="@string/txt_introduction"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#B35600"
+        android:padding="10sp"
+        android:text="@string/txt_instruction"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTwo" />
+
+    <EditText
+        android:id="@+id/tWeight"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txt_weight"
+        android:inputType="number"
+        android:padding="20sp"
+        android:textColor="#B35600"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThree" />
+
+    <EditText
+        android:id="@+id/tHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="(%)"
+        android:ems="10"
+        android:hint="@string/txt_height"
+        android:inputType="none|numberDecimal"
+        android:padding="20sp"
+        android:textColor="#B35600"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tWeight" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#9ED97F"
+        android:text="@string/txt_compute"
+        android:textColor="#B35600"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tHeight"
+        app:layout_constraintVertical_bias="0.117"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
