@@ -8,28 +8,14 @@
     tools:context=".OverWeightResult">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="330dp"
-        android:layout_height="53dp"
-        android:text="Overweight is defined as a BMI of 25 or more, thus it includes pre-obesity defined as a BMI between 25 and 29.9 ."
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_return"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_result"
-        app:layout_constraintVertical_bias="0.493" />
-
-    <TextView
         android:id="@+id/txt_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="84dp"
         android:text="@string/txt_result"
         android:textAlignment="center"
-        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,10 +24,24 @@
         android:id="@+id/btn_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginBottom="160dp"
         android:backgroundTint="#ED4141"
         android:text="@string/btn_return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:text="Overweight is defined as a BMI of 25 or more, thus it includes pre-obesity defined as a BMI between 25 and 29.9 ."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_return"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_result" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class UnderWeightResult extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
         String result = extras.getString("result");
-        setContentView(R.layout.activity_normal_weight_result);
+        setContentView(R.layout.activity_under_weight_result);
 
         Button btnReturn = (Button) findViewById(R.id.btn_return);
         TextView tvResult = (TextView) findViewById(R.id.txt_result);

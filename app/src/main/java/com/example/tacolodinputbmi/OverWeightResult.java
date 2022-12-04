@@ -16,7 +16,7 @@ public class OverWeightResult extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
         String result = extras.getString("result");
-        setContentView(R.layout.activity_normal_weight_result);
+        setContentView(R.layout.activity_over_weight_result);
 
         Button btnReturn = (Button) findViewById(R.id.btn_return);
         TextView tvResult = (TextView) findViewById(R.id.txt_result);
@@ -26,7 +26,7 @@ public class OverWeightResult extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        Intent normalweight = new Intent(OverWeightResult.this, MainActivity.class);
-        startActivity(normalweight);
+        Intent overweight = new Intent(OverWeightResult.this, MainActivity.class);
+        startActivity(overweight);
     }
 }
